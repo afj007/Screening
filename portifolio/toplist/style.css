@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    overflow: hidden;
+
+
+}
+
+html body .container-principal {
+    width: 100%;
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.box-top {
+    background-color: #828282;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    width: 100%;
+}
+
+html body .container-principal .box-menu {
+    background-color: #828282;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 200px;
+}
+html body .container-principal .box-menu .dados-cliente {
+    text-align: center;
+}
+html body .container-principal .box-menu .dados-cliente i{
+    font-size: 60px;
+    color: #fff;
+}
+
+html body .container-principal .box-menu .dados-cliente i.F {
+    font-size: 60px;
+    color: red;
+}
+
+html body .container-principal .box-menu .dados-cliente i.M {
+    font-size: 60px;
+    color: blue;
+}
+
+.box-conteudo {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    background-color: #E5E5E5;
+    height: 100%;
+    overflow: auto;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    overflow-scrolling: auto;
+}
+
+.btn-iniciar-triagem {
+    position: relative;
+}
+/*Alterando Scroll*/
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: gray;
+    opacity: 0.8;
+}
